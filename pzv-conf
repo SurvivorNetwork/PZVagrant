@@ -1,0 +1,6 @@
+pzv_config[ "visibility" ] = "lan"
+pzv_config[ "steam" ] = true
+pzv_config[ "memory" ]	   = 2048
+pzv_config[ "pz_memory" ]  = 1900
+pzv_config[ "autorum" ] = false
+pzv_config[ "serve_from_host" ] = true
