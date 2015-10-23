@@ -1,6 +1,16 @@
-pzv_config[ "visibility" ] = "lan"
-pzv_config[ "steam" ] = true
-pzv_config[ "memory" ]	   = 2048
-pzv_config[ "pz_memory" ]  = 1900
-pzv_config[ "autorum" ] = false
-pzv_config[ "serve_from_host" ] = true
+# Configuration overrides. Check the Vagrantfile for option keys, for now.
+#
+# TODO: PZV should consume standard servertest.ini files and generate a "production copy" - the default servertest.ini
+#       file provided by the game server should provide the base settings, which should then overlayed with a 
+#       user-provided ini if it exists, then environment variables (Nested TODO: does dotenv have a ruby library?), and
+#       finally overrides from this file. After processing the resulting configuration and making necessary
+#       adjustments, PZV should produce the final game configuration servertest.ini file in /vagrant/server and
+#       sym-link (or sync/copy, since host/guest symlinks seem so buggy) it into the appropriate directory.
+#
+# Ex:
+#pzv_config[ "visibility" ]      = "lan"
+#pzv_config[ "steam" ]           = true
+#pzv_config[ "memory" ]	         = 2048
+#pzv_config[ "pz_memory" ]       = 1600
+#pzv_config[ "autorun" ]         = false
+#pzv_config[ "serve_from_host" ] = true
